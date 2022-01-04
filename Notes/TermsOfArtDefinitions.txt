@@ -1,0 +1,217 @@
+Variable
+ Variables are containers for storing data values.
+ String - stores text, such as "Hello". String values are surrounded by double quotes
+ int - stores integers (whole numbers), without decimals, such as 123 or -123
+ float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+ char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+ boolean - stores values with two states: true or false
+
+Function
+A block of code that performs a task.
+
+Class
+A container for related functions
+
+Method
+A method is a block of code which only runs when it is called.You can pass data, known as parameters, into a method.
+Methods are used to perform certain actions, and they are also known as functions.
+
+Field
+A Java field is a variable inside a class.
+
+static
+means that the method belongs to the Main class and not an object of the Main class.
+
+Void
+means that this method does not have a return value.
+
+Define the terms in relation to each other. ie a method is a function, defined within an object…a function is…
+ a method is a function that belongs to a class. In Java, every function belongs to a class.
+In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object.
+What distinguishes them from other objects is that functions can be called. In brief, they are Function objects.
+
+
+
+2) Data Types
+byte 1bytes range[-128.127]
+The byte data type can store whole numbers from -128 to 127.
+This can be used instead of int or other integer types to save memory when you are certain that the value will be within -128 and 127:
+Example
+byte myNum = 100;
+System.out.println(myNum)
+
+short 2bytes range[-32k,32k]
+The short data type can store whole numbers from -32768 to 32767:
+Example
+short myNum = 5000;
+System.out.println(myNum);
+
+int 4bytes range[-2B,2B]
+Int
+The int data type can store whole numbers from -2147483648 to 2147483647.
+In general, and in our tutorial, the int data type is the preferred data type when we create variables with a numeric value.
+Example
+int myNum = 100000;
+System.out.println(myNum);
+
+long 8 bytes
+The long data type can store whole numbers from -9223372036854775808 to 9223372036854775807.
+This is used when int is not large enough to store the value. Note that you should end the value with an "L":
+Example
+long myNum = 15000000000L;
+System.out.println(myNum);
+
+float 4bytes
+The float data type can store fractional numbers from 3.4e−038 to 3.4e+038. Note that you should end the value with an "f":
+Example
+float myNum = 5.75f;
+System.out.println(myNum);
+
+double 8 bytes
+The double data type can store fractional numbers from 1.7e−308 to 1.7e+308. Note that you should end the value with a "d":
+Example
+double myNum = 19.99d;
+System.out.println(myNum)
+
+char 2bytes A,B,C
+The char data type is used to store a single character. The character must be surrounded by single quotes, like 'A' or 'c':
+Example
+char myGrade = 'B';
+System.out.println(myGrade);
+
+boolean 1bytes true/false
+A boolean data type is declared with the boolean keyword and can only take the values true or false:
+Example
+boolean isJavaFun = true;
+boolean isFishTasty = false;
+System.out.println(isJavaFun);     // Outputs true
+System.out.println(isFishTasty);   // Outputs false
+
+https://www.w3schools.com/java/java_data_types.asp
+
+
+
+3) Control Flow
+1.	define “control flow”
+Java compiler executes the code from top to bottom. The statements in the code are executed according to the order in which they appear.
+However, Java provides statements that can be used to control the flow of Java code. Such statements are called control flow statements.
+It is one of the fundamental features of Java, which provides a smooth flow of program.
+Java provides three types of control flow statements.
+1,Decision Making statements
+if statements
+switch statement
+2,Loop statements
+do while loop
+while loop
+for loop
+for-each loop
+3,Jump statements
+break statement
+continue statement
+https://www.javatpoint.com/control-flow-in-java
+
+
+4) Inheritance
+Define each of the sections terms, Inheritance, The Object Class, etc.
+In total you should have 11 terms. Each section except 1, 8, 14, and 15
+Java Inheritance (Subclass and Superclass)
+In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+
+subclass (child) - the class that inherits from another class
+superclass (parent) - the class being inherited from
+To inherit from a class, use the extends keyword.
+
+In the example below, the Car class (subclass) inherits the attributes and methods from the Vehicle class (superclass):
+
+Example
+class Vehicle {
+  protected String brand = "Ford";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";    // Car attribute
+  public static void main(String[] args) {
+
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+  }
+}https://www.w3schools.com/java/java_inheritance.asp
+
+Object class
+Object class is present in java.lang package. Every class in Java is directly or indirectly derived from the Object class.
+If a Class does not extend any other class then it is direct child class of Object and if extends other class then it is an indirectly derived.
+Therefore the Object class methods are available to all Java classes.
+Hence Object class acts as a root of inheritance hierarchy in any Java Program.
+https://www.geeksforgeeks.org/object-class-in-java/
+
+Java Constructors
+A constructor in Java is a special method that is used to initialize objects.
+The constructor is called when an object of a class is created. It can be used to set initial values for object attributes:
+https://www.w3schools.com/java/java_constructors.asp
+
+
+Access Modifiers
+As the name suggests access modifiers in Java helps to restrict the scope of a class, constructor, variable, method, or data member. There are four types of access modifiers available in java:
+
+Default – No keyword required
+Private
+Protected
+Public
+https://www.geeksforgeeks.org/access-modifiers-java/
+
+
+Overriding Methods
+In any object-oriented programming language, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes.
+When a method in a subclass has the same name, same parameters or signature, and same return type(or sub-type) as a method in its super-class,
+ then the method in the subclass is said to override the method in the super-class.
+
+Upcasting: Upcasting is the typecasting of a child object to a parent object. Upcasting can be done implicitly.
+Upcasting gives us the flexibility to access the parent class members but it is not possible to access all the child class members using this feature.
+Instead of all the members, we can access some specified members of the child class. For instance, we can access the overridden methods.
+Downcasting: Similarly, downcasting means the typecasting of a parent object to a child object. Downcasting cannot be implicit.
+
+
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class.
+Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+
+Abstract Classes and Methods
+Data abstraction is the process of hiding certain details and showing only essential information to the user.
+Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).
+
+The abstract keyword is a non-access modifier, used for classes and methods:
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+An abstract class can have both abstract and regular methods
+
+The final modifier for finalizing the implementations of classes, methods, and variables.
+The main purpose of using a class being declared as final is to prevent the class from being subclassed. If a class is marked as final then no class can inherit any feature from the final class.
+
+The final modifier for finalizing the implementations of classes, methods, and variables.
+We can declare a method as final, once you declare a method final it cannot be overridden. So, you cannot modify a final method from a sub class.
+The main intention of making a method final would be that the content of the method should not be changed by any outsider
+https://www.tutorialspoint.com/What-is-a-final-method-in-Java
+
+
+Deep inheritance hierarchies are examples of successful reuse, but are also the source of maintenance problems, due to the complexity inherent in the large number of classes involved.
+
+The behavior of classes deep down in the inheritance hierarchy is difficult to predict, since they potentially inherit from a large number of methods.
+Classes with a lot of subclasses exert great influence on the system as a whole, making the consequences of modifications to a superclass hard to predict.
+A large number of subclasses may also indicate an unsuitable level of abstraction.
+To prevent unintended reuse of your classes by inheritance, we recommend that you use final classes to close the paths of inheritance trees.
+https://help.sap.com/doc/abapdocu_750_index_htm/7.50/en-US/abeninheritance_guidl.htm
+
+multiple inheritance
+The Java programming language supports multiple inheritance of type, which is the ability of a class to implement more than one interface. An object can have multiple types: the type of its own class and the types of all the interfaces that the class implements. This means that if a variable is declared to be the type of an interface,
+then its value can reference any object that is instantiated from any class that implements the interface.
+https://docs.oracle.com/javase/tutorial/java/IandI/multipleinheritance.html
+

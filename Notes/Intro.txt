@@ -1,0 +1,51 @@
+5- How Java Code Gets Executed
+the difference between interpreted and compiled languages
+In a compiled language, the target machine directly translates the program. In an interpreted language, the source code is not directly translated by the target machine.
+Instead, a different program, aka the interpreter, reads and executes the code.
+https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/
+
+Define the terms and explain the difference between interpreted and compiled in your terms of art text document.
+Compiled languages are converted directly into machine code that the processor can execute. As a result, they tend to be faster and more efficient to execute than interpreted languages. They also give the developer more control over hardware aspects, like memory management and CPU usage.
+
+Compiled languages need a “build” step – they need to be manually compiled first. You need to “rebuild” the program every time you need to make a change. In our hummus example, the entire translation is written before it gets to you.
+ If the original author decides that he wants to use a different kind of olive oil, the entire recipe would need to be translated again and resent to you.
+Interpreters run through a program line by line and execute each command. Here, if the author decides he wants to use a different kind of olive oil, he could scratch the old one out and add the new one. Your translator friend can then convey that change to you as it happens.
+
+Interpreted languages were once significantly slower than compiled languages.
+But, with the development of just-in-time compilation, that gap is shrinking.
+
+
+
+2.	create control flow logic and justify your control flow choices by comparing to other types.
+ ie “I use if/else statements instead of switch statements because…”
+if statement vs switch
+I use if/else statements instead of switch statements because  If-else conditional branches are great for variable conditions that result into a boolean,
+whereas switch statements are great for fixed data values.
+I use switch statements instead of if statements because Switch better for Multi way branching: When compiler compiles a switch statement, it will inspect each of the case constants and create a “jump table” that it will use for selecting the path of execution depending on the value of the expression. Therefore, if we need to select among a large group of values, a switch statement will run much faster than the equivalent logic coded using a sequence of if-elses. The compiler can do this because it knows that the case constants are all the same type and simply must be compared for equality with the switch expression,
+while in case of if expressions, the compiler has no such knowledge.
+Switch statement can excuted the different code depending on the value of expression.
+https://www.geeksforgeeks.org/switch-vs-else/
+for loop vs while
+The Java for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it is recommended to use for loop.
+The for-each loop is used to traverse array or collection in Java. It is easier to use than simple for loop because we don't need to increment value and use subscript notation.
+If the number of iteration is not fixed, it is recommended to use while loop.
+If the number of iteration is not fixed and you must have to execute the loop at least once, it is recommended to use the do-while loop.
+https://www.javatpoint.com/java-for-loop
+
+
+3) Refactoring Towards an Object-oriented Design
+Method Overloading
+With method overloading, multiple methods can have the same name with different parameters:
+
+Example
+int myMethod(int x)
+float myMethod(float x)
+double myMethod(double x, double y)
+
+5) Interfaces
+
+what an interface is eloquently and implement a basic interface on your own?
+
+
+
+. Know the basic anatomy of an interface and how to implement it. Why are they important for OOP?
