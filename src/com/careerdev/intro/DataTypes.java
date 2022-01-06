@@ -1,15 +1,35 @@
 package com.careerdev.intro;
 
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class DataTypes {
     public static void main(String[] args) {
+        //reading input
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: ");
+        byte age = scanner.nextByte();
+
+        Scanner input = new Scanner(System.in);
+        String name = input.nextLine();//yitong jiang
+        String name1 = input.nextLine().trim();
+
+
+
+
+        //formatiing numnbers
+        NumberFormat percent = NumberFormat.getPercentInstance();
+        //NumberFormat.getPercentInstance().format(0.1);
+        String resultNumber = percent.format(0.1);
         //The Math Class
         int result = Math.round(1.1F);//1
         int result1 = (int)Math.ceil(1.1F);//greater than 1.1F output 2
         int result2 = (int)Math.floor(1.1F);// less than 1.1F
+        double result3 = Math.random();
+        double result4 = Math.round(Math.random()*100);
 
 
         //casting
@@ -71,7 +91,7 @@ public class DataTypes {
         Point point1 = new Point(1,1);
         Point point2 = point1;
         point1.x = 2;
-        byte age = 30;
+        byte age9 = 30;
         Date now = new Date();
         now.getTime();
         //data type
