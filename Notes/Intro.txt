@@ -42,6 +42,11 @@ int myMethod(int x)
 float myMethod(float x)
 double myMethod(double x, double y)
 
+
+
+
+Abstraction
+Reduce complexity by hiding unnecesary details
 5) Interfaces
 
 what an interface is eloquently and implement a basic interface on your own?

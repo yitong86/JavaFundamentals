@@ -111,6 +111,11 @@ continue statement
 https://www.javatpoint.com/control-flow-in-java
 
 
+class
+A blueprint for creating objects
+object
+an instance of a class
+
 4) Inheritance
 Define each of the sections terms, Inheritance, The Object Class, etc.
 In total you should have 11 terms. Each section except 1, 8, 14, and 15
