@@ -50,7 +50,11 @@ Reduce complexity by hiding unnecesary details
 5) Interfaces
 
 what an interface is eloquently and implement a basic interface on your own?
-
+Interface
+what should be done
+We use interface to build loosely-coupled,extensible,testable applications
+classes
+How it should be done
 
 
 . Know the basic anatomy of an interface and how to implement it. Why are they important for OOP?
